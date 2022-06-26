@@ -13,20 +13,22 @@
          {{ message }}
       {%- endfor %}
 
-      <h3>Users (<a href = "{{ url_for('index') }}">Add User
+      <h3>Newsletter (<a href = "{{ url_for('new') }}">Add User
          </a>)</h3>
 
       <table>
          <thead>
             <tr>
                <th>Email</th>
+               <th>Mdp</th>
             </tr>
          </thead>
 
          <tbody>
-            {% for newsletter in newsletters %}
+            {% for user in users %}
                <tr>
-                  <td>{{ newsletter.email }}</td>
+                  <td>{{ user.email }}</td>
+                  <td>{{ user.password }}</td>
                </tr>
             {% endfor %}
          </tbody>
