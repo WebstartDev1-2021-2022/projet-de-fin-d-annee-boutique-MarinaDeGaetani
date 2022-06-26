@@ -1,0 +1,49 @@
+// Inscription
+
+body {
+  div.formulaire-inscription {
+    margin-top: 100px;
+    form.formulaire {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      input.form-control {
+        background-color: $blanc;
+        border: solid 1px $rose-fonce;
+        border-radius: 100px;
+        height: 48px;
+        width: 405px;
+        padding: 0px 20px;
+      }
+      input.form-control:hover {
+        border: solid 1px $rose-fonce;
+      }
+
+      div.infos-1,
+      div.infos-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 110px 0px 0px;
+
+        div.form-group {
+          margin-bottom: 40px;
+        }
+        label {
+          display: flex;
+          margin-bottom: 5px;
+        }
+      }
+
+      div.btn {
+        button.btn-3 {
+          background: #f26b8f;
+          border-radius: 40px;
+          padding: 24px 200px;
+          border: none;
+          margin: 40px 0px 67px 0px;
+        }
+      }
+    }
+  }
+}

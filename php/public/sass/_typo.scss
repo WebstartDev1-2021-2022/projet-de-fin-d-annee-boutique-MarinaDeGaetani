@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "Helvetica";
+  font-weight: normal;
+  src: url(‘fonts/Helvetica.ttf’) format(truetype);
+}
+@font-face {
+  font-family: "Helvetica";
+  font-weight: bold;
+  src: url(‘fonts/Helvetica.ttf’) format(truetype);
+}
+
+body,
+.text-dropdown {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  color: $noir;
+
+  // Global
+
+  a,
+  li,
+  ul {
+    text-decoration: none;
+    list-style: none;
+    color: $noir;
+  }
+
+  label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    margin-top: 100px;
+  }
+  h1.acceuil {
+    margin: 78px 0px 63px 203px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+  }
+  h2.h2-inscription {
+    margin-left: 140px;
+    margin-bottom: 34px;
+  }
+  h2.h2-fiche-prod {
+    margin: 147px 0px 72px 98px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h3.h3-admin {
+    margin: 26px 0px 23px 0px;
+    border-bottom: 1px solid $rose-fonce;
+    border-width: block;
+  }
+  p.cvg,
+  h1,
+  h3 {
+    margin: 10px 0px 10px 98px;
+  }
+
+  @media screen and (max-width: 376px) {
+    h1.acceuil {
+      margin: 78px 0px 63px 16px;
+    }
+  }
+
+  // Header
+  a.text-header,
+  a.text-header-2,
+  a.text-header-3,
+  a.text-header-4,
+  a.text-header-5 {
+    font-weight: normal;
+    color: $blanc;
+    margin-right: 19px;
+    font-size: 12px;
+  }
+  a.text-header:hover,
+  a.text-header-2:hover,
+  a.text-header-3:hover,
+  a.text-header-4:hover,
+  a.text-header-5:hover {
+    font-weight: bold;
+  }
+  li.titre-header-dropdown {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  li.text-dropdown {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 6px;
+  }
+
+  // Footer
+  p.titre-footer {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $rose-fonce;
+  }
+  a.text-footer,
+  p.text-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $noir;
+    margin-top: 10px;
+  }
+  a.text-footer:hover,
+  .titre-header-dropdown {
+    color: $rose-fonce;
+  }
+  p.horaires {
+    margin-left: 55px;
+    margin-top: 3px;
+  }
+  p.news {
+    text-align: center;
+    margin-top: 17px;
+  }
+  p.text-news-letter {
+    color: #f26b8f;
+    margin: 10px 18px 0px 18px;
+  }
+
+  input.email {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $rose-fonce;
+  }
+
+  //Page par page
+
+  //Login & Inscription
+
+  a.btn-typo,
+  p.btn-typo,
+  button.btn-typo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $blanc;
+  }
+
+  div.connexion-inscription {
+    p.para-18 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 22px;
+    }
+    a.mdp-oublie {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+    }
+  }
+
+  // Accueil utilisateurs
+
+  p.titre-produit,
+  a.titre-produit,
+  p.prix-produit {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  //Blocs images
+  a.a-blur {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: $rose-fonce;
+    position: absolute;
+  }
+
+  // Consomatrice Unicare
+  p.util {
+    margin: 5px;
+  }
+  p.para-gras {
+    font-weight: 700;
+  }
+
+  // Catégorie
+
+  .nom-cate {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: $blanc;
+  }
+  .sur-titre-cate {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $rose-fonce;
+    margin-left: 98px;
+    margin-top: 50px;
+  }
+  .description-cate {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 98px;
+    margin-top: 20px;
+  }
+  .sous-cat-a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  // Fiche produit
+
+  a.nombres-produit {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+
+  p.prix-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  p.titre-details,
+  button.titre-details {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: $vert-fonce;
+  }
+  p.active,
+  button.active {
+    color: $blanc;
+  }
+
+  p.text-detail,
+  p.tags {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  p.text-detail {
+    position: absolute;
+  }
+  p.tags,
+  p.prix-text {
+    margin-top: 10px;
+  }
+
+  // Accueil Admin & quelques textes de la page fiche-produit
+
+  a.admin-accueil {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $rose-fonce;
+  }
+  p.commandes-infos,
+  td.produits-infos,
+  p.sous-titre-details // fiche produit
+  {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  //Panier
+  .total {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $noir;
+  }
+}

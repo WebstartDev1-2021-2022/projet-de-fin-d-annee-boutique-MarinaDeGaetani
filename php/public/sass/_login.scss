@@ -1,0 +1,63 @@
+//Login et Inscription
+
+body {
+  div.connexion-inscription {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 0px 100px 0px;
+    div.connection {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 22px 0px 0px;
+
+      div.mdp {
+        a.mdp-oublié {
+          margin: 10px;
+        }
+      }
+
+      button.btn-1 {
+        background: #f26b8f;
+        border-radius: 40px;
+        padding: 24px 100px;
+        border: none;
+        margin: 67px 0px 67px 0px;
+      }
+    }
+    div.sep {
+      border: 0.5px solid #000000;
+      height: 500px;
+    }
+    div.inscription {
+      margin: 0px 0px 0px 22px;
+      button.btn-2 {
+        background: #f26b8f;
+        border-radius: 40px;
+        padding: 24px 100px;
+        border: none;
+        margin-top: 67px;
+      }
+    }
+  }
+}
+
+//Mobile
+@media screen and (max-width: 1050px) {
+  div.connexion-inscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 100px 20px;
+  }
+  div.sep {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  input.form-control {
+    width: 202px;
+  }
+}

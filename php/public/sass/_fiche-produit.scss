@@ -1,0 +1,148 @@
+body {
+  .produit-infos {
+    margin: 100px 98px 0px 98px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .produit-imgs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 120px;
+      .img-principale {
+        height: 600px;
+        width: 500px;
+        border-radius: 18px;
+      }
+    }
+    .produit-appercu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.box {
+        cursor: pointer;
+        .imgs-appercu {
+          border-radius: 45px;
+          margin: 6px;
+          height: 90px;
+          width: 90px;
+        }
+      }
+    }
+    div.produit-texte {
+      div.notes {
+        display: flex;
+
+        div.etoiles-fp {
+          display: flex;
+          margin-bottom: 10px;
+        }
+        a.nombres-produit {
+          margin-left: 4px;
+        }
+      }
+    }
+
+    // btn -panier
+    div.btn-panier {
+      display: flex;
+      margin: 95px 0px 60px 0px;
+      .plus-moins {
+        display: flex;
+        align-items: center;
+        border: 1px solid $rose-fonce;
+        border-radius: 25px 0px 0px 25px;
+        padding: 5px;
+      }
+      .ajout-panier {
+        background: $rose-fonce;
+        border-radius: 0px 25px 25px 0px;
+        padding: 15px 24px;
+      }
+    }
+
+    // Details Produits
+
+    .nav-tabs {
+      border-bottom: solid 1px $vert-fonce;
+    }
+    .nav-link.active {
+      background-color: $vert-fonce;
+      color: $blanc;
+      border-color: $vert-fonce;
+      padding: 10px;
+      border-radius: 5px 5px 0px 0px;
+    }
+    .nav-link:focus,
+    .nav-link:hover {
+      color: $blanc;
+      background-color: $vert-fonce;
+      padding: 10px;
+      border-radius: 5px 5px 0px 0px;
+    }
+    input.nbr-form-control {
+      outline: none;
+      border: none;
+    }
+    div#home-tab-pane.tab-pane.fade.text-detail.active.show {
+      max-width: 300px;
+    }
+  }
+
+  // Recommendations
+  .recommendation {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(251, 225, 230, 0.58) 52.92%,
+      #f2a7b5 100%
+    );
+    display: flex;
+  }
+  div.ombre {
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+    button.sans-margin {
+      margin: 20px 0px 67px 0px;
+      padding: 16px 30px;
+    }
+  }
+}
+
+// Mobile
+
+@media screen and (max-width: 376px) {
+  body {
+    .produit-infos {
+      margin: 45px 33px;
+
+      .produit-imgs {
+        margin: 0px;
+
+        .img-principale {
+          height: 364px;
+          width: 309px;
+        }
+      }
+      .arrows {
+        display: none;
+      }
+
+      .box {
+        margin-top: 30px;
+      }
+    }
+    .produit-texte {
+      margin-top: 45px;
+
+      div.btn-panier {
+        .plus-moins {
+          border-radius: 100px 0px 0px 100px;
+        }
+        .ajout-panier {
+          border-radius: 0px 100px 100px 0px;
+          padding: 3px 35px;
+        }
+      }
+    }
+  }
+}

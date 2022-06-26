@@ -1,0 +1,47 @@
+body {
+  // Admin Générale
+  .produits-admin {
+    margin: 100px 98px 30px 98px;
+
+    div.pres {
+      display: flex;
+      flex-direction: column;
+      div.titres {
+        display: flex;
+        justify-content: space-between;
+      }
+      span.ligne-06 {
+        border-bottom: 1px solid $vert-fonce;
+        margin-top: 20px;
+      }
+      div.elems {
+        display: flex;
+        flex-direction: column;
+        div.elem {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+
+          div.center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+          }
+
+          div.edit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .btn-primary {
+              color: $vert-fonce;
+            }
+            .btn-danger {
+              color: $rose-fonce;
+            }
+          }
+        }
+      }
+    }
+  }
+}

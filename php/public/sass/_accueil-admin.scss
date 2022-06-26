@@ -1,0 +1,48 @@
+body {
+  section.admin-accueil {
+    display: flex;
+    flex-direction: column;
+    div.categories-admin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button.catégorie-admin {
+        padding: 80px 100px;
+        border: solid 1px $rose-fonce;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25));
+        margin-left: 15px;
+        border-radius: 15px;
+        background-color: $blanc;
+      }
+    }
+
+    div.commandes-récentes {
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      border: solid 1px $rose-fonce;
+      margin: 39px 255px 135px 255px;
+      padding: 50px;
+      div.infos-commandes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 32px;
+        border-bottom: 1px solid $rose-fonce;
+      }
+      div.button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button.btn-affichez-plus {
+          margin-top: 32px;
+          padding: 12px 24px;
+          border-radius: 100px;
+          border: none;
+          background-color: $rose-fonce;
+        }
+      }
+    }
+  }
+}

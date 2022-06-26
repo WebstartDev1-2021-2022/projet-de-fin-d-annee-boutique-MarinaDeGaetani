@@ -1,0 +1,62 @@
+.container-rec {
+  margin: 50px 0px 50px 30px;
+  display: flex;
+  flex-direction: column;
+
+  div.prods {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .infos-recap {
+      .recap-img {
+        width: 200px;
+        border-radius: 15px;
+      }
+    }
+  }
+  div.com-recap-tot {
+    margin: 30px 0px 0px 30px;
+
+    .link-pink:hover {
+      color: #f26b8f;
+    }
+  }
+
+  // Card
+
+  .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+
+    .p-3 {
+      padding: 2rem !important;
+    }
+
+    .btn-primary {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #f26b8f;
+      --bs-btn-border-color: #f26b8f;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #f2a7b5;
+      --bs-btn-hover-border-color: #f2a7b5;
+      --bs-btn-focus-shadow-rgb: 49, 132, 253;
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: #f2a7b5;
+      --bs-btn-active-border-color: #f2a7b5;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #f26b8f;
+      --bs-btn-disabled-border-color: #f26b8f;
+    }
+    .btn-primary:focus {
+      outline: none;
+    }
+  }
+}

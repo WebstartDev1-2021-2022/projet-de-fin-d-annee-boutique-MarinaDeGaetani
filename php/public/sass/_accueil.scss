@@ -1,0 +1,192 @@
+body {
+  // Slider nouveautés
+  // test
+  div.bandeau-img-mobiles {
+    display: none;
+  }
+
+  // Arrows
+  div.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px 0px;
+    div.arrow-1,
+    div.arrow-2 {
+      background: none;
+      border: none;
+      cursor: pointer;
+      img.arrow-left,
+      img.arrow-right {
+        height: 40px;
+        width: auto;
+      }
+    }
+  }
+  // En ce moments produits & Les Incontounables
+  div.les-incontournables,
+  div.en-ce-moment {
+    div.slider-2 {
+      display: flex;
+      margin: 0px 50px 0px 30px;
+      flex-direction: row;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 5px;
+      scrollbar-gutter: none;
+    }
+    .slider-2::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  // Blocs Images
+
+  div.blocs {
+    margin: 144px 97px 70px 98px;
+    div.blocs-2 {
+      display: flex;
+      button.button-bloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        margin: 0px 15px 15px 0px;
+        border: none;
+        background: none;
+
+        img.img-01,
+        img.img-02 {
+          width: 615px;
+        }
+      }
+    }
+    div.blocs-3 {
+      display: flex;
+      button.button-bloc-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        margin: 0px 15px 0px 5px;
+        border: none;
+        background: none;
+        padding: 0px;
+
+        img.img-03,
+        img.img-04,
+        img.img-05 {
+          width: 405px;
+        }
+      }
+    }
+  }
+}
+
+// Elles utilisent Unicare
+div.unicare-avis {
+  background: linear-gradient(180deg, #ffffff 0%, #c4f2e1 100%);
+  background-size: cover;
+  div.consomatrices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div.consomatrice {
+      margin: 55px 120px 117px 0px;
+      filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+      img.persons {
+        width: 203px;
+        border: solid 1px $noir;
+        border-radius: 15px 15px 0px 0px;
+      }
+      div.text-consom {
+        background-color: $blanc;
+        border: 1px solid $noir;
+        border-radius: 0px 0px 15px 15px;
+        width: 195px;
+        padding: 5px;
+
+        div.instagram {
+          display: flex;
+
+          img.instagram-icon {
+            width: 22px;
+            margin-right: 5px;
+          }
+        }
+        div.age {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+
+@media screen and (max-width: 376px) {
+  //Img bandeau
+
+  img.bandeau-img {
+    display: none;
+  }
+
+  img.bandeau-img-mobiles {
+    display: contents;
+    img.bandeau-img-mobile {
+      width: 375px;
+      height: 332px;
+    }
+  }
+
+  // En ce moment & Les Incontournables
+
+  // Arrows
+  div.arrows {
+    margin: 0px;
+    button.arrow-1,
+    button.arrow-2 {
+      display: none;
+    }
+  }
+
+  // Blocs images
+
+  div.blocs {
+    margin: 0px;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+
+    img.img-01,
+    img.img-02,
+    img.img-03,
+    img.img-04,
+    img.img-05 {
+      width: 376px;
+    }
+  }
+
+  // Les incontournables
+
+  div.les-incontournables,
+  div.en-ce-moment {
+    div.slider-2 {
+      margin: 0px 15px 0px 16px;
+    }
+  }
+
+  // Elles utilisent unicare
+  div.consomatrices {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 5px;
+    div.consomatrice {
+      margin: 50px 30px 117px 0px;
+    }
+  }
+}
