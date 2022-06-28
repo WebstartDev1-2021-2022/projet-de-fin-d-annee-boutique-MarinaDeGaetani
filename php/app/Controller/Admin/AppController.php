@@ -11,6 +11,7 @@ class AppController extends \App\Controller\AppController{
     protected  $template = 'adminDefault';
 
 
+
     public function __construct(){
         parent::__construct();
         $app = App::getInstance();

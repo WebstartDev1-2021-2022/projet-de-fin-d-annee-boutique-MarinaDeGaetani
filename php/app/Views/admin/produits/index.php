@@ -20,7 +20,7 @@
         <tbody>
             <?php foreach($produits as $produit): ?>
             <tr>
-                <td><?= $produit->id;></td>
+                <td><?= $produit->id;?></td>
                 <td><?= $produit->titre; ?></td>
                 <td><img src="../public/img/upload/<?= $produit->img; ?>" style="width: 10%;"></td>
                 <td><img src="../public/img/upload/<?= $produit->img2; ?>" style="width: 10%;"></td>

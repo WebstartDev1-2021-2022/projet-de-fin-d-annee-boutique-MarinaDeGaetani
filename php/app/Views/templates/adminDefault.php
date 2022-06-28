@@ -16,10 +16,9 @@
 
 <body>
 
-
 <header>
-    <nav class="navbar">
-        <div class="container">
+    <nav class="navbar-head">
+        <div class="container-nav">
             <div class="navbar-header">
                 <div class="menu-burger">
                     <button class="btn-burger">
