@@ -1,7 +1,7 @@
 <?php
 return array(
-    "db_user" => "root",
-    "db_pass" => "",
-    "db_host" => "localhost",
-    "db_name" => "mvc"
+    "db_user" => "dv21degaetani",
+    "db_pass" => "y~1mrL17",
+    "db_host" => "localhost:3306",
+    "db_name" => "dv21degaetani"
 );
